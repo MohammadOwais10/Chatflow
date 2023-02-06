@@ -1,0 +1,112 @@
+.friend {
+  display: block;
+}
+
+.friends-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 10px 20px;
+}
+
+.friends-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  margin: auto;
+}
+
+.friends-container > span {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+}
+
+.friends-container > .activeClass {
+  color: white;
+  background-color: #585858;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.25rem;
+  border: unset;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.friends-container > .inactiveClass {
+  color: grey;
+  background-color: unset;
+  border: unset;
+  font-size: 1.25rem;
+  color: grey;
+  border: unset;
+  font-size: 1.25rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+/**************************************/
+.friend-search {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.friend-search > input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #1a1a1a;
+  border: 1px solid #212529;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.friend-total {
+  margin: 0 20px;
+  color: white;
+}
+
+.friend-lists-line {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  margin: 0 20px;
+  padding: 10px 0;
+}
+
+.friend-lists-line > span {
+  align-items: center;
+  display: flex;
+}
+
+.friend-lists :hover {
+  background-color: rgb(46, 44, 44);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1010px) {
+  .friends-container > .inactiveClass {
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+  }
+  .friends-container > .activeClass {
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+  }
+
+  .friends-container > span {
+    width: unset;
+  }
+}

@@ -1,0 +1,41 @@
+.message-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 10px 20px;
+}
+
+.message-header > span {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: white;
+  align-items: center;
+  display: flex;
+}
+
+.message-lists {
+  margin: 20px;
+}
+
+.message-lists-line {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  padding: 5px;
+  background: #15161e;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.message-lists-line > span {
+  align-items: center;
+  display: flex;
+}
+
+.message-lists :hover {
+  background-color: rgb(46, 44, 44);
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.popup-section {
+  margin: 10px 20px;
+}
+
+.popup-icon {
+  margin-bottom: 10px;
+}
+
+.popup-icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.popup-icon > svg {
+  width: 4.5vw;
+  height: 6.5vh;
+}

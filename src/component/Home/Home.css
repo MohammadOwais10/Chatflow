@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-popup {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  width: 8%;
+  background-color: #121212;
+  color: aliceblue;
+  align-items: center;
+}
+
+.sidebar-group {
+  display: flex;
+  flex-direction: row;
+  width: 92%;
+}
+
+.container-sidebar {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  width: 30%;
+  background-color: #212222;
+  color: aliceblue;
+}
+
+.container-header {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  /* width: 67%; */
+  width: 70%;
+  background: #31313c;
+}
+
+@media screen and (max-width: 850px) {
+  .container-popup {
+    width: 15%;
+  }
+  .sidebar-group {
+    width: 85%;
+    flex-direction: column;
+  }
+
+  .container-sidebar {
+    width: 100%;
+  }
+
+  .container-header {
+    width: 100%;
+  }
+}
